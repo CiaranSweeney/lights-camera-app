@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true">-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate the film:"
+            android:textSize="60px"
+            android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/text_film_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ratingBar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="43dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:imeOptions="actionDone"
+        android:textAlignment="center"
+        android:textSize="60px" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:visibility="visible" />
+
+        <Button
+            android:id="@+id/addFilm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addFilm"
+            android:text="Add Film"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="101dp" />
+
+    <!--</LinearLayout>!-->
+
+</RelativeLayout>

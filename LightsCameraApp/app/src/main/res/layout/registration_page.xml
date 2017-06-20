@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/signUpHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up!"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_pressed"
+            android:hint="Enter your Email please"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passwordSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:hint="Enter your password please"
+            android:inputType="textPassword"
+            android:textColor="@android:color/background_dark" />
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="signUp"
+            android:text="Sign up"
+
+            />
+
+        <TextView
+            android:id="@+id/textLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hit here if you already have an account"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</RelativeLayout>
